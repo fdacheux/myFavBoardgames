@@ -46,8 +46,8 @@ function Navbar() {
                   <path
                     d="M 35 65 Q 50 80 65 65"
                     stroke="#1F2937"
-                    stroke-width="4"
-                    stroke-linecap="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
                     fill="none"
                   ></path>
                   {/* <!-- Blush --> */}

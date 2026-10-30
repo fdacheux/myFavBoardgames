@@ -58,7 +58,7 @@ export default function LoginModal({ onClose }: LoginModalProps) {
             />
           </div>
           <button
-            className="w-full rounded-md bg-amber-400 px-4 py-3 font-bold text-slate-950 transition hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+            className="w-full rounded-md bg-citrus px-4 py-3 font-bold text-slate-950 transition hover:bg-green-citrus focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
             type="submit"
           >
             Sign in
@@ -68,7 +68,7 @@ export default function LoginModal({ onClose }: LoginModalProps) {
           <a className="font-medium text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-slate-900" href="#reset-password">
             Reset password
           </a>
-          <a className="font-semibold text-slate-800 hover:text-amber-700" href="#sign-up">
+          <a className="font-semibold text-slate-800 hover:text-yellow-400" href="#sign-up">
             New here? Sign up
           </a>
         </div>
