@@ -1,15 +1,35 @@
-export default function LoginModal() {
+type LoginModalProps = {
+  onClose: () => void
+}
+
+export default function LoginModal({ onClose }: LoginModalProps) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 px-4 py-8" role="presentation">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 px-4 py-8"
+      onClick={(event) => {
+        if (event.target === event.currentTarget) onClose()
+      }}
+      role="presentation"
+    >
       <div
         aria-labelledby="login-title"
         aria-modal="true"
         className="w-full max-w-md rounded-lg border border-slate-200 bg-white p-8 shadow-2xl"
         role="dialog"
       >
-        <h2 className="mb-7 text-center text-3xl font-bold text-slate-900" id="login-title">
-          Sign in
-        </h2>
+        <div className="mb-7 flex items-center justify-between">
+          <h2 className="text-3xl font-bold text-slate-900" id="login-title">
+            Sign in
+          </h2>
+          <button
+            aria-label="Close sign-in dialog"
+            className="rounded-md px-2 py-1 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+            onClick={onClose}
+            type="button"
+          >
+            X
+          </button>
+        </div>
         <form className="space-y-5">
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-700" htmlFor="username">
