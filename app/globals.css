@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-citrus: #ffe600;
+  --color-green-citrus: #b2ff0566;
+}
 
-button{
+button {
   cursor: pointer;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #d4c000, #8bc700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
