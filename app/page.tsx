@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
     <div>
-      <main><h1>My Favourite Boardgames</h1></main>
+      <main className="grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"><Header /></main>
     </div>
   );
 }
