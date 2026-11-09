@@ -38,7 +38,7 @@ function SearchBar() {
             </svg>
           </div>
         </div>
-        <button className="flex items-center gap-2 bg-green-citrus hover:bg-citrus  font-bold py-4 px-6 rounded-full shadow-citrus transition-all transform hover:-translate-y-1" onClick={() => console.log("Filters button clicked")}>
+        <button className="flex items-center gap-2 bg-green-citrus hover:bg-citrus  font-bold py-4 px-6 rounded-full shadow-citrus transition-all transform hover:-translate-y-1" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
