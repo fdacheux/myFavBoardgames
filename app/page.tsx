@@ -6,7 +6,7 @@ export default function Home() {
   //We receive a list of cards from backend
   // proccess by adding hot depending on the number of likes and the one of a week ago
   // we also add the trend to display the arrow up or down depending on last classment and new classment
-  //finally add the rank of the card in the list 
+  //finally add the rank of the card in the list
 
   const listOfCards = [
     {
@@ -30,7 +30,7 @@ export default function Home() {
       title: "Root",
       hot: false,
       likes: 8500,
-      trend: "equal",   
+      trend: "equal",
       ranking: 8,
     },
   ];
@@ -46,6 +46,11 @@ export default function Home() {
             </li>
           ))}
         </section>
+        <div className="flex justify-center mt-12">
+          <button className="bg-citrus-dark text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:bg-black transition-colors hover:scale-105 duration-300 border-4 border-transparent hover:border-citrus">
+            Load More Games{" "}
+          </button>
+        </div>
       </main>
     </div>
   );
