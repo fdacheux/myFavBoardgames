@@ -71,11 +71,9 @@ function Footer() {
           <h4 className="text-green-citrus font-bold mb-2 uppercase tracking-wider text-sm">
             Official shopping partners:{" "}
           </h4>
-          <ul>
-            <li>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-citrus font-semibold transition-colors"
+          <ul className="flex flex-wrap gap-3 justify-center md:justify-end text-sm font-semibold text-gray-200">
+            <li className="bg-white/10 px-3 py-1 rounded-full hover:bg-citrus hover:text-citrus-dark cursor-pointer transition-colors">
+              <a 
               >
                 MeepleMart
               </a>
