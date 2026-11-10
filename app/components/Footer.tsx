@@ -1,0 +1,53 @@
+function Footer() {
+  return (
+    <footer className="bg-citrus-dark text-white mt-16 rounded-t-[3rem] pt-12 pb-8 px-6 lg:px-12 border-t-8 border-citrus relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-green-citrus rounded-full blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-48 h-48 bg-citrus rounded-full blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
+      <div className="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+        {" "}
+        <div className="text-center md:text-left">
+          <div className="flex items-center gap-3 justify-center md:justify-start mb-4">
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="20"
+                  y="30"
+                  width="22"
+                  height="22"
+                  rx="4"
+                  fill="#1F2937"
+                ></rect>
+                <rect
+                  x="58"
+                  y="30"
+                  width="22"
+                  height="22"
+                  rx="4"
+                  fill="#1F2937"
+                ></rect>
+                <path
+                  d="M 35 65 Q 50 80 65 65"
+                  stroke="#1F2937"
+                  strokeWidth="6"
+                  strokeLinecap="round"
+                  fill="none"
+                ></path>
+              </svg>
+            </div>
+            <span className="text-2xl font-extrabold text-white tracking-tight">
+              My Fav Boardgames
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
