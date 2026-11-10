@@ -64,6 +64,11 @@ function Footer() {
             </Link>
           </div>
         </div>
+        <div className="text-center md:text-right">
+          <h4 className="text-gray-300">
+            Official shopping partners:{" "}
+          </h4>
+        </div>
       </div>
     </footer>
   );

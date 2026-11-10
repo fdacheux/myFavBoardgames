@@ -6,6 +6,7 @@ test.describe("Footer", () => {
   });
   test("footer has correct content", { tag: "@smoke" }, async ({ page }) => {
     await expect(page.locator("footer")).toContainText("My Fav Boardgames");
+    await expect(page.locator("footer")).toContainText("Official shopping partners");
   });
   test("footer link Rules of site navigates to correct page", async ({ page }) => {
     await page.locator("footer a:has-text('Rules of site')").click();
