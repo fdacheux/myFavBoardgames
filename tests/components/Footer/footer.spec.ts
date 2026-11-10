@@ -23,4 +23,9 @@ test.describe("Footer", () => {
     await expect(page).toHaveURL("/contact");
     await expect(page.locator("h2")).toContainText("Contact");
   });
+  test("footer has link to MeepleMart partner", async ({ page }) => {
+    const meepleMartLink = page.locator("footer a:has-text('MeepleMart')");
+    await expect(meepleMartLink).toBeVisible();
+    await meepleMartLink.click();
+  });
 });

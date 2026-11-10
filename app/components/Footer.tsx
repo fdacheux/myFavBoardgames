@@ -59,15 +59,28 @@ function Footer() {
             >
               Privacy Policy
             </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-citrus font-semibold transition-colors">
+            <Link
+              href="/contact"
+              className="text-gray-300 hover:text-citrus font-semibold transition-colors"
+            >
               Contact
             </Link>
           </div>
         </div>
-        <div className="text-center md:text-right">
-          <h4 className="text-gray-300">
+        <div className="text-center md:text-right bg-white/5 p-5 rounded-3xl backdrop-blur-sm border border-white/10">
+          <h4 className="text-green-citrus font-bold mb-2 uppercase tracking-wider text-sm">
             Official shopping partners:{" "}
           </h4>
+          <ul>
+            <li>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-citrus font-semibold transition-colors"
+              >
+                MeepleMart
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
