@@ -53,6 +53,12 @@ function Footer() {
             >
               Rules of site
             </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-gray-300 hover:text-citrus font-semibold transition-colors"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>
