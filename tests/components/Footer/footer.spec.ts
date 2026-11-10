@@ -12,4 +12,9 @@ test.describe("Footer", () => {
     await expect(page).toHaveURL("/rules");
     await expect(page.locator("h2")).toContainText("Rules of site");
   });
+  test("footer link Privacy Policy navigates to correct page", async ({ page }) => {
+    await page.locator("footer a:has-text('Privacy Policy')").click();
+    await expect(page).toHaveURL("/privacy-policy");
+    await expect(page.locator("h2")).toContainText("Privacy Policy");
+  });
 });
