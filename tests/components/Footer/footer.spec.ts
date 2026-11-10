@@ -17,4 +17,9 @@ test.describe("Footer", () => {
     await expect(page).toHaveURL("/privacy-policy");
     await expect(page.locator("h2")).toContainText("Privacy Policy");
   });
+  test("footer link contact navigates to correct page", async ({ page }) => {
+    await page.locator("footer a:has-text('Contact')").click();
+    await expect(page).toHaveURL("/contact");
+    await expect(page.locator("h2")).toContainText("Contact");
+  });
 });
