@@ -59,6 +59,9 @@ function Footer() {
             >
               Privacy Policy
             </Link>
+            <Link href="/contact" className="text-gray-300 hover:text-citrus font-semibold transition-colors">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
