@@ -69,14 +69,17 @@ function Footer() {
         </div>
         <div className="text-center md:text-right bg-white/5 p-5 rounded-3xl backdrop-blur-sm border border-white/10">
           <h4 className="text-green-citrus font-bold mb-2 uppercase tracking-wider text-sm">
-            Official shopping partners:{" "}
+            Official shopping partners
           </h4>
           <ul className="flex flex-wrap gap-3 justify-center md:justify-end text-sm font-semibold text-gray-200">
             <li className="bg-white/10 px-3 py-1 rounded-full hover:bg-citrus hover:text-citrus-dark cursor-pointer transition-colors">
-              <a 
-              >
-                MeepleMart
-              </a>
+              <a>MeepleMart</a>
+            </li>
+            <li className="bg-white/10 px-3 py-1 rounded-full hover:bg-citrus hover:text-citrus-dark cursor-pointer transition-colors">
+              <a>DiceDepot</a>
+            </li>
+            <li className="bg-white/10 px-3 py-1 rounded-full hover:bg-citrus hover:text-citrus-dark cursor-pointer transition-colors">
+              <a>BoardGame Heaven</a>
             </li>
           </ul>
         </div>

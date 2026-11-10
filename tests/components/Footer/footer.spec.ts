@@ -7,6 +7,7 @@ test.describe("Footer", () => {
   test("footer has correct content", { tag: "@smoke" }, async ({ page }) => {
     await expect(page.locator("footer")).toContainText("My Fav Boardgames");
     await expect(page.locator("footer")).toContainText("Official shopping partners");
+    await expect(page.locator("footer")).toContainText("© 2026 My Fav Boardgames. Made with love for tabletop lovers.");
   });
   test("footer link Rules of site navigates to correct page", async ({ page }) => {
     await page.locator("footer a:has-text('Rules of site')").click();
@@ -23,7 +24,7 @@ test.describe("Footer", () => {
     await expect(page).toHaveURL("/contact");
     await expect(page.locator("h2")).toContainText("Contact");
   });
-  test("footer has link to MeepleMart partner", async ({ page }) => {
+  test("footer has link to dummy partner", async ({ page }) => {
     const meepleMartLink = page.locator("footer a:has-text('MeepleMart')");
     await expect(meepleMartLink).toBeVisible();
     await meepleMartLink.click();
