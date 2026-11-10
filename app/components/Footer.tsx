@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Footer() {
   return (
     <footer className="bg-citrus-dark text-white mt-16 rounded-t-[3rem] pt-12 pb-8 px-6 lg:px-12 border-t-8 border-citrus relative overflow-hidden">
@@ -43,6 +45,14 @@ function Footer() {
             <span className="text-2xl font-extrabold text-white tracking-tight">
               My Fav Boardgames
             </span>
+          </div>
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-4">
+            <Link
+              href="/rules"
+              className="text-gray-300 hover:text-citrus font-semibold transition-colors"
+            >
+              Rules of site
+            </Link>
           </div>
         </div>
       </div>
